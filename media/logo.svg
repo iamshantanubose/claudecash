@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72">
+  <!-- Background pill -->
+  <rect x="0" y="0" width="320" height="72" rx="8" fill="#1a1714"/>
+  <!-- Gold accent bar top -->
+  <rect x="0" y="0" width="320" height="4" rx="2" fill="#ffd400"/>
+  <!-- Gold accent bar bottom -->
+  <rect x="0" y="68" width="320" height="4" rx="2" fill="#ffd400"/>
+  <!-- C$ badge -->
+  <rect x="16" y="16" width="52" height="40" rx="4" fill="#ffd400"/>
+  <text x="42" y="43" font-family="'Courier New',monospace" font-size="22" font-weight="900" fill="#1a1714" text-anchor="middle">C$</text>
+  <!-- Wordmark -->
+  <text x="84" y="30" font-family="'Courier New',monospace" font-size="13" font-weight="400" fill="#8a8580" letter-spacing="1">Claude</text>
+  <text x="84" y="53" font-family="'Courier New',monospace" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="-0.5">Cash</text>
+  <!-- Tagline -->
+  <text x="200" y="34" font-family="'Courier New',monospace" font-size="9" fill="#ffd400" letter-spacing="1">EARN WHILE</text>
+  <text x="200" y="48" font-family="'Courier New',monospace" font-size="9" fill="#ffd400" letter-spacing="1">AI THINKS</text>
+</svg>

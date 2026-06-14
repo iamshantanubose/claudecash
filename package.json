@@ -1,0 +1,80 @@
+{
+  "name": "claudecash-ai",
+  "displayName": "ClaudeCash — Earn While AI Thinks",
+  "description": "Earn 50% of ad revenue while Claude Code, Copilot, or any AI tool thinks. A 5-second sponsored card shows during loading — zero interference with your code or workflow.",
+  "version": "0.1.3",
+  "publisher": "claudecash",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "claude",
+    "ai",
+    "developer",
+    "rewards",
+    "earnings"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "ClaudeCash",
+      "properties": {
+        "claudecash.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Your ClaudeCash API key from https://claudecash.co/dashboard"
+        },
+        "claudecash.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable ClaudeCash during AI loading"
+        },
+        "claudecash.showInStatusBar": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show ClaudeCash earnings in status bar"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "claudecash.openDashboard",
+        "title": "ClaudeCash: Open Dashboard"
+      },
+      {
+        "command": "claudecash.setApiKey",
+        "title": "ClaudeCash: Set API Key"
+      },
+      {
+        "command": "claudecash.showBalance",
+        "title": "ClaudeCash: Show Balance"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "build:prod": "node esbuild.mjs --production",
+    "watch": "node esbuild.mjs --watch",
+    "package": "npm run build:prod && vsce package",
+    "test": "echo \"No public tests\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^3.0.0",
+    "esbuild": "^0.28.1",
+    "typescript": "^5.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamshantanubose/claudecash"
+  },
+  "license": "MIT"
+}
